@@ -1,6 +1,16 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let wordArray = word.split('')
+  let  reverseWordArray = []
+  for (let i=wordArray.length-1; i>=0; i--){
+    reverseWordArray.push(wordArray[i])
+  }
+  console.log(wordArray, reverseWordArray);
+  let reversedWord =  reverseWordArray.join('')
+  return  (word == reversedWord)
 }
+
+isPalindrome("racecar")
 
 /* 
   Add your pseudocode here
